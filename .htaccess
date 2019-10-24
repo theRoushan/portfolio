@@ -5,6 +5,7 @@ RewriteEngine On
 RewriteBase /theRoushan.github.io/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
 RewriteRule . /theRoushan.github.io/index.php [L]
 </IfModule>
 
